@@ -1,0 +1,57 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  text-align: center;
+  margin: 0;
+}
+
+#hero {
+  width: 592px;
+  margin: 0 auto 72px; /* Margin alinha com base na página, é o alinhamento da "caixa" que contém o conteúdo. O primeiro valor é Top, segundo as laterais e terceiro embaixo*/
+}
+
+#hero img {
+  margin-bottom: 72px;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal; /*como por padrão o h1 é em negrito, é necessário essa tag para tirar o negrito*/
+
+  margin-bottom: 32px;
+}
+
+h1 span { /* Quando colocamos dois itens sem virgula, significa que estamos estilizando o "span" que está dentro de h1*/
+  font-weight: bold; /*para colocar o negrito em pontos específicos no h1 que tiramos o negrito total*/
+}
+
+span, a { /* Quando colocamos mais de 1 item separados por vírgula, significa que estamos estilizando da mesma forma, todos os itens separados pela vírgula*/
+  color: #FF9900
+}
+
+p, #footer {
+  color: #7D7987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#footer a + a { /* Dessa forma, a regra vai se aplicar somente ao conteúdo da taga "a", quando ela for seguida de outra tag "a"*/
+  margin-left: 28px;
+}
+
+#line {
+  width: 568px;
+  height: 0px;
+
+  margin: 0 auto 8px;
+
+  border: 1px solid #eceff2;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
